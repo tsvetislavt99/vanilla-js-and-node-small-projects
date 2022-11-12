@@ -2,9 +2,17 @@ import { winningCombinations } from './utils/winningCombination.js';
 import { clearScore } from './utils/clearScore.js';
 import { initScore } from './utils/initializeScore.js';
 
-initScore();
-let ticTacToeBoard = [[], [], []];
 const cells = document.querySelectorAll('.cell');
+function initBoard() {
+  cells.forEach((cell) => {
+    cell.addEventListener('click', cellClicked, { once: true });
+  });
+}
+
+initScore();
+initBoard();
+
+let ticTacToeBoard = [[], [], []];
 const reset_button = document.querySelector('.reset_button');
 
 let currentPlayer = 'O';
@@ -72,15 +80,13 @@ function getCurrentPlayer() {
 }
 
 function resetBoard() {
+  ticTacToeBoard = [[], [], []];
   cells.forEach((cell) => {
     cell.classList.remove('X');
     cell.classList.remove('O');
   });
+  initBoard();
 }
-
-cells.forEach((cell) => {
-  cell.addEventListener('click', cellClicked, { once: true });
-});
 
 reset_button.addEventListener('click', () => {
   resetBoard();
