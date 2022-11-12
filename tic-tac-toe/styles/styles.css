@@ -1,0 +1,94 @@
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  height: 390px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.row {
+  display: flex;
+  width: 450px;
+  height: 130px;
+}
+
+.cell {
+  width: 150px;
+  height: 130px;
+  border: 1px solid black;
+  font-size: 100px;
+  text-align: center;
+}
+
+.X::after {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '\274c'; /* use the hex value here... */
+  font-size: 50px;
+  color: #000;
+  line-height: 100px;
+  text-align: center;
+  z-index: 10;
+}
+
+.O::after {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '\2b55'; /* use the hex value here... */
+  font-size: 50px;
+  color: #000;
+  line-height: 100px;
+  text-align: center;
+  z-index: 10;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  height: 50px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.score__player {
+  font-size: 20px;
+}
+
+.score__player--name {
+  font-weight: bold;
+}
+
+.score__player--score {
+  font-weight: bold;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reset_button {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: #fff;
+  cursor: pointer;
+}

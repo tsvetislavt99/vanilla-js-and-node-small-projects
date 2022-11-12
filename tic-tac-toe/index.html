@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./src/index.js" defer type="module"></script>
+    <!-- <script src="./src/utils/initializeScore.js" defer></script> -->
+    <title>Tic-tac-tow</title>
+  </head>
+  <body>
+    <header>Tic-tac-toe</header>
+    <main>
+      <div class="board">
+        <div class="row">
+          <div id="0 0" class="cell"></div>
+          <div id="0 1" class="cell"></div>
+          <div id="0 2" class="cell"></div>
+        </div>
+        <div class="row">
+          <div id="1 0" class="cell"></div>
+          <div id="1 1" class="cell"></div>
+          <div id="1 2" class="cell"></div>
+        </div>
+        <div class="row">
+          <div id="2 0" class="cell"></div>
+          <div id="2 1" class="cell"></div>
+          <div id="2 2" class="cell"></div>
+        </div>
+      </div>
+      <div class="score">
+        <div class="score__player">
+          <div class="score__player--name">Player 1</div>
+          <div id="X Wins" class="score__player--score">0</div>
+        </div>
+        <div class="score__player">
+          <div class="score__player--name">Player 2</div>
+          <div id="O Wins" class="score__player--score">0</div>
+        </div>
+      </div>
+      <div class="reset">
+        <button class="reset_button">Reset</button>
+    </main>
+  </body>
+</html>
