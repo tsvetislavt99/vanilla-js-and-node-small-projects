@@ -1,0 +1,52 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-block: 1em;
+  font-size: 2em;
+}
+
+button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-size: 1em;
+  margin: 0.5em;
+}
+
+/* Scalte buttons on hover for 0.5 sec */
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+button:disabled {
+  background-color: #565656;
+  color: #ffffff;
+}
+
+button:disabled:hover {
+  transform: scale(1);
+}
+
+.laps {
+  list-style: none;
+}
+
+li {
+  padding: 0.125em;
+  font-size: 1.5em;
+}
+
+.stopwatch {
+  font-size: 3em;
+}
