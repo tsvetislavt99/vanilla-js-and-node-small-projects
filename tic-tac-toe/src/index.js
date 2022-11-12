@@ -50,6 +50,9 @@ function checkWin(currentClass) {
       }
     }, 0);
   }
+  if (!checkWinningCombination(currentClass)) {
+    checkBoardFull();
+  }
 }
 
 function checkWinningCombination(currentClass) {
@@ -86,6 +89,26 @@ function resetBoard() {
     cell.classList.remove('O');
   });
   initBoard();
+}
+
+function checkBoardFull() {
+  let counter = 0;
+  ticTacToeBoard.forEach((row) => {
+    return row.forEach((cell) => {
+      if (cell) {
+        console.log(counter);
+        counter++;
+      }
+    });
+  });
+  if (counter === 9) {
+    setTimeout(() => {
+      const shouldClear = confirm('Draw!');
+      if (shouldClear) {
+        resetBoard();
+      }
+    }, 0);
+  }
 }
 
 reset_button.addEventListener('click', () => {
