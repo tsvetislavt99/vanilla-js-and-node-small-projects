@@ -1,0 +1,116 @@
+export const QUESTIONS = [
+  {
+    name: 'question_1',
+    type: 'list',
+    questionText: 'JavaScript was created in 10 days then released on\n',
+    choices: [
+      'May 23rd, 1995',
+      'Nov 24th, 1995',
+      'Dec 4th, 1995',
+      'Dec 17, 1996',
+    ],
+    answer: 'Dec 4th, 1995',
+  },
+  {
+    name: 'question_2',
+    type: 'list',
+    questionText: 'Which of the following is not a JavaScript framework?\n',
+    choices: ['Angular', 'React', 'Vue', 'Laravel'],
+    answer: 'Laravel',
+  },
+  {
+    name: 'question_3',
+    type: 'list',
+    questionText: "What is the difference between '==' and '==='?\n",
+    choices: [
+      "'==' checks for value equality and '===' checks for value and type equality",
+      "'==' checks for value and type equality and '===' checks for value equality",
+      "'==' checks for value equality and '===' checks for value equality",
+      "'==' checks for value and type equality and '===' checks for value and type equality",
+    ],
+    answer:
+      "'==' checks for value equality and '===' checks for value and type equality",
+  },
+  {
+    name: 'question_4',
+    type: 'checkbox',
+    questionText: 'Which of the following are JavaScript data types?\n',
+    choices: [
+      'Number',
+      'String',
+      'Enum',
+      'Boolean',
+      'Object',
+      'Array',
+      'Function',
+    ],
+    answer: ['Number', 'String', 'Boolean', 'Object', 'Array', 'Function'],
+  },
+  {
+    name: 'question_5',
+    type: 'list',
+    questionText: 'Which of the following is not a JavaScript operator?\n',
+    choices: ['new', 'this', 'delete', 'typeof'],
+    answer: 'this',
+  },
+  {
+    name: 'question_6',
+    type: 'list',
+    questionText: 'What is the output of `0.1 + 0.2 === 0.3`?\n',
+    choices: ['true', 'false'],
+    answer: 'false',
+  },
+  {
+    name: 'question_7',
+    type: 'list',
+    questionText: 'What is hoisting in JavaScript?\n',
+    choices: [
+      'Moving variable and function declarations to the top of their scope',
+      'Moving variable and function declarations to the bottom of their scope',
+      'Moving variable and function declarations to the middle of their scope',
+      'Moving variable and function declarations to the top of their scope and initializing them with undefined',
+    ],
+    answer:
+      'Moving variable and function declarations to the top of their scope',
+  },
+  {
+    name: 'question_8',
+    type: 'input',
+    questionText: "What is JavaScript's runtime environment called?\n",
+    answer: 'nodejs',
+  },
+  {
+    name: 'question_9',
+    type: 'list',
+    questionText: 'What is the output of 1 + "1"?\n',
+    choices: ['11', '2', 'undefined', 'NaN'],
+    answer: '11',
+  },
+  {
+    name: 'question_10',
+    type: 'list',
+    questionText: 'What does `apply` do in JavaScript?\n',
+    choices: [
+      'It calls a function with a given `this` value and arguments provided as an array',
+      'It calls a function with a given `this` value and arguments provided as an object',
+      'It calls a function with a given `this` value and arguments provided as a string',
+      'It calls a function with a given `this` value and arguments provided as a number',
+    ],
+    answer:
+      'It calls a function with a given `this` value and arguments provided as an array',
+  },
+  {
+    name: 'question_11',
+    type: 'list',
+    questionText: "What is chrome's runtime environment called?\n",
+    choices: ['nodejs', 'v8', 'v12', 'spidermonkey'],
+    answer: 'v8',
+  },
+  {
+    name: 'question_12',
+    type: 'list',
+    questionText: 'What is the output of `typeof typeof 1`?\n',
+    choices: ['number', 'string', 'undefined', 'NaN'],
+    answer: 'string',
+  },
+];
